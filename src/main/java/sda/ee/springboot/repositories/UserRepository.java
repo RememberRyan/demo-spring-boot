@@ -7,6 +7,7 @@ import sda.ee.springboot.dto.User;
  * Created by Ryan Alexander on 20/11/2018.
  */
 
+// this is a Bean because it extends CrudRepository
 public interface UserRepository extends CrudRepository<User, Integer> {
 
 }
