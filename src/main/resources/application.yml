@@ -1,0 +1,7 @@
+spring.jpa.hibernate.ddl-auto: create
+spring:
+  datasource:
+#    default port for mysql
+    url: jdbc:mysql://localhost:3306/testspringbootdb
+    username: root
+    password: A33s{2t@
