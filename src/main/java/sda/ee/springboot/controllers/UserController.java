@@ -21,6 +21,12 @@ public class UserController {
         return userRepository.findAll();
     }
 
+    // Filter method, users by name
+    @RequestMapping(method = RequestMethod.GET, path="/allByName")
+    public Iterable<User> getAllUserByName(@PathParam("name") String name){
+        return userRepository.findAllByName(name);
+    }
+
     // example of query param: http://google.com/search?name=Karl
     @RequestMapping(method = RequestMethod.POST, path = "/add")
     // we can extract the name variable from the request

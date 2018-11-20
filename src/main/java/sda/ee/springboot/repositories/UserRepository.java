@@ -10,4 +10,8 @@ import sda.ee.springboot.dto.User;
 // this is a Bean because it extends CrudRepository
 public interface UserRepository extends CrudRepository<User, Integer> {
 
+    /* new request query. Spring parses 'findAllByName',
+    name is property of user. Spring creates the SQL query from this line.
+     */
+    Iterable<User> findAllByName(String name);
 }

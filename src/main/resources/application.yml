@@ -1,4 +1,6 @@
-spring.jpa.hibernate.ddl-auto: create
+#spring.jpa.hibernate.ddl-auto: create
+
+spring.jpa.hibernate.ddl-auto: update
 spring:
   datasource:
 #    default port for mysql
