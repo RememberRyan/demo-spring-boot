@@ -13,7 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
     @RequestMapping (path = "/test")
 
 public class TestController {
-        @RequestMapping(method = RequestMethod.GET)
+    // Now handles "/test/hello"
+        @RequestMapping(method = RequestMethod.GET, path="/hello")
     public String sayHello(){
             return "Hello!";
         }
